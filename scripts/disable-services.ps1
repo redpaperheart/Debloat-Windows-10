@@ -5,7 +5,7 @@
 $services = @(
     "diagnosticshub.standardcollector.service" # Microsoft (R) Diagnostics Hub Standard Collector Service
     "DiagTrack"                                # Diagnostics Tracking Service
-    "dmwappushservice"                         # WAP Push Message Routing Service (see known issues)
+    # "dmwappushservice"                         # WAP Push Message Routing Service (see known issues)
     "HomeGroupListener"                        # HomeGroup Listener
     "HomeGroupProvider"                        # HomeGroup Provider
     "lfsvc"                                    # Geolocation Service
@@ -20,9 +20,9 @@ $services = @(
     "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
     "wscsvc"                                   # Windows Security Center Service
     #"WSearch"                                 # Windows Search
-    "XblAuthManager"                           # Xbox Live Auth Manager
-    "XblGameSave"                              # Xbox Live Game Save Service
-    "XboxNetApiSvc"                            # Xbox Live Networking Service
+    # "XblAuthManager"                           # Xbox Live Auth Manager
+    # "XblGameSave"                              # Xbox Live Game Save Service
+    # "XboxNetApiSvc"                            # Xbox Live Networking Service
 
     # Services which cannot be disabled
     #"WdNisSvc"
