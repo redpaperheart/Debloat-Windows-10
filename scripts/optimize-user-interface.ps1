@@ -27,9 +27,9 @@ Write-Output "Disable mouse pointer hiding"
 Set-ItemProperty "HKCU:\Control Panel\Desktop" "UserPreferencesMask" ([byte[]](0x9e,
 0x1e, 0x06, 0x80, 0x12, 0x00, 0x00, 0x00))
 
-Write-Output "Disable Game DVR and Game Bar"
-force-mkdir "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR"
-Set-ItemProperty "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR" "AllowgameDVR" 0
+# Write-Output "Disable Game DVR and Game Bar"
+# force-mkdir "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR"
+# Set-ItemProperty "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR" "AllowgameDVR" 0
 
 Write-Output "Disable easy access keyboard stuff"
 Set-ItemProperty "HKCU:\Control Panel\Accessibility\StickyKeys" "Flags" "506"
